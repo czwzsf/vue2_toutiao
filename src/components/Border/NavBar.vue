@@ -34,4 +34,14 @@ export default {
 };
 </script>
 
-<style scoped></style>
+<style scoped>
+.van-nav-bar {
+  background-color: #6ee1d4;
+  color: #ffffff;
+
+  .van-nav-bar__title {
+    font-size: 18px;
+    color: #158380;
+  }
+}
+</style>

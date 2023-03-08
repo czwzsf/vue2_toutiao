@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="home-container">
     <!--    引入NavBar组件-->
     <NavBar :title="title"></NavBar>
   </div>
@@ -14,10 +14,14 @@ export default {
   //给子组件传值
   data() {
     return {
-      title: "首页",
+      title: "头条",
     };
   },
 };
 </script>
 
-<style scoped lang="less"></style>
+<style scoped lang="less">
+.home-container {
+  padding: 46px 0 50px 0;
+}
+</style>
