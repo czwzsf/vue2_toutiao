@@ -1,13 +1,21 @@
 <template>
   <div id="app">
-    <nav>
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
-    </nav>
-    <router-view/>
+    <!--    路由占位符号-->
+    <router-view />
+    <!--    底部组件-->
+    <BottomCom></BottomCom>
   </div>
 </template>
+<script>
+import BottomCom from "@/components/Border/BottomCom.vue";
 
+export default {
+  name: "App",
+  components: {
+    BottomCom,
+  },
+};
+</script>
 <style lang="less">
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
